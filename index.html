@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Bizmate</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .navbar {
+            transition: background-color 0.5s, color 0.5s;
+        }
+        .navbar.scrolled {
+            background-color: black !important;
+        }
+        .navbar.scrolled .nav-link {
+            color: white !important;
+        }
+        .navbar.scrolled .navbar-brand {
+            color: white !important;
+        }
+        .navbar-brand img {
+            transition: opacity 0.5s;
+        }
+        .navbar.scrolled .navbar-brand #logo {
+            display: none;
+        }
+        .navbar.scrolled .navbar-brand #logo-transparente {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="./imagenes/LOGO.png" alt="Logo" id="logo">
+                <img src="./imagenes/LOGO-TRANSPARENTE.png" alt="Logo Transparente" id="logo-transparente" style="display: none;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Nueva sección "Acerca de Nosotros". Aqui se utiliza disenio con bootstrap  -->
+    <section class="about-us container mt-5 pt-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <img src="./imagenes/expomype.jpg" class="img-fluid" alt="Expomype">
+            </div>
+            <div class="col-md-6 mb-4 text-center">
+                <h2>ACERCA DE NOSOTROS</h2>
+                <p>¡En Bizmate siempre estamos dispuestos a ayudarte!</p>
+                <p>Somos una empresa Valdiviana con más de 6 años de experiencia en el desarrollo de proyectos tecnológicos. ¿Quieres mejorar la productividad de tu empresa?</p>
+                <ul class="list-unstyled text-left">
+                    <li>- Soporte lunes a viernes 5x7</li>
+                    <li>- Calidad garantizada</li>
+                    <li>- Servicio de asesoría, con foco en la satisfacción total</li>
+                </ul>
+                <br>
+                <p>Escríbenos y te contactaremos</p>
+                <br>
+                <div class="input-group mt-3">
+                    <input type="email" class="form-control" placeholder="Ingresa tu correo" aria-label="Ingresa tu correo">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products container mt-5 pt-5 d-flex align-items-center justify-content-center" style="height: 100vh;">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center mb-4">PRODUCTOS</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./imagenes/comercio-electronico-1.png" class="card-img-top" alt="Comercio Electrónico">
+                    <div class="card-body">
+                        <h5 class="card-title">Comercio Electrónico</h5>
+                        <p class="card-text">Plataformas de venta online de calidad</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./imagenes/desarrollo-web.png" class="card-img-top" alt="Desarrollo Web">
+                    <div class="card-body">
+                        <h5 class="card-title">Desarrollo Web</h5>
+                        <p class="card-text">Creación de sitios web modernos y funcionales</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./imagenes/facturacion-electronica.png" class="card-img-top" alt="Facturación Electronica">
+                    <div class="card-body">
+                        <h5 class="card-title">Facturación Electrónica</h5>
+                        <p class="card-text">Soluciones de facturación electrónica eficientes</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./imagenes/desarrollo-software.png" class="card-img-top" alt="Desarrollo de Software">
+                    <div class="card-body">
+                        <h5 class="card-title">Desarrollo de Software</h5>
+                        <p class="card-text">Software a medida para optimizar procesos</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./imagenes/aplicaciones-moviles.png" class="card-img-top" alt="Aplicaciones Móviles">
+                    <div class="card-body">
+                        <h5 class="card-title">Aplicaciones Móviles</h5>
+                        <p class="card-text">Desarrollo de aplicaciones móviles innovadoras</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="./imagenes/proyectos-innovacion.png" class="card-img-top" alt="Proyectos de Innovación">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyectos de Innovación</h5>
+                        <p class="card-text">Iniciativas innovadoras para el crecimiento empresarial</p>
+                        <a href="#" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 pt-4 pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contáctanos</h5>
+                    <p>Los Laureles 72, 2° piso</p>
+                    <p>Teléfono: +56 9 4342 3770</p>
+                    <p>Email: ventasbizmate@gmail.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Nosotros</a></li>
+                        <li><a href="#" class="text-white">Productos</a></li>
+                        <li><a href="#" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Sobre nosotros</h5>
+                    <p>Somos una empresa de tecnología Valdiviana enfocada en generar de manera efectiva, la transformación digital que tu negocio necesita.</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="./imagenes/twitter.png" alt="Twitter" class="img-fluid" style="width: 30px; margin: 0 10px;">
+                    </a>
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="./imagenes/facebook.png" alt="Facebook" class="img-fluid" style="width: 30px; margin: 0 10px;">
+                    </a>
+                    <a href="https://youtube.com" target="_blank">
+                        <img src="./imagenes/youtube.png" alt="YouTube" class="img-fluid" style="width: 30px; margin: 0 10px;">
+                    </a>
+                    <a href="https://linkedin.com" target="_blank">
+                        <img src="./imagenes/linkedin.png" alt="LinkedIn" class="img-fluid" style="width: 30px; margin: 0 10px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!--Se usa un script de javascript para cambiar la apariencia de la barra de navegación (navbar) ante la accion scroll en la WEB. 
+Especificamente , agrega y elimina una clase CSS llamada scrolled al navbar dependiendo de la posición de desplazamiento del scroll en la WEB.
+Además, se oculta y muestra el logo de la empresa en la barra de navegación. -->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 50) {
+                $('.navbar').addClass('scrolled');
+                $('#logo').hide();
+                $('#logo-transparente').show();
+            } else {
+                $('.navbar').removeClass('scrolled');
+                $('#logo').show();
+                $('#logo-transparente').hide();
+            }
+        });
+    </script>
+</body>
+</html>
